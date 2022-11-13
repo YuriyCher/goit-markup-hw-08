@@ -1,0 +1,66 @@
+body
+{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 0;
+    background-color: var(--primary-text-color-theme-dark);
+}
+
+
+
+
+.nav__link
+{
+  text-decoration: none;
+}
+.nav__port 
+{   display: block;
+text-decoration: none;
+padding: 32px 0;
+margin: 0;
+}
+
+// page__studio__list
+
+.nav__studio
+{
+margin-right: 93px;
+}
+
+.nav__studio.nav__port
+
+{
+padding: 24px 0;
+
+}
+
+
+
+.list
+{ 
+list-style:none;
+padding: 0;
+margin: 0;
+&-port
+{ 
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+
+}
+
+ 
+button
+  {
+    border: none;
+
+  }
+  
+    .button
+     {
+     border-width: 0px;
+     }
