@@ -364,6 +364,13 @@ fill:var(--secondary-background-fill);
 // display: flex; 
 justify-content: center;
 column-gap: 30px;
+width: 100%;
+@media screen and  (min-width:450px) 
+        {
+          width:calc(100%-30px/2);
+          
+        }
+
 }
 .customers-list-link
 {
