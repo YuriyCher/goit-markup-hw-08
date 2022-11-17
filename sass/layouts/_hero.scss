@@ -1,50 +1,51 @@
-// .overlay
-// {
-//   max-width: 1600px;
-//   height: 600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background-color: 
-//  rgba(196, 196, 196, 1);
-//   background-image:linear-gradient(to right,
-//    rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-//   url(../images/Img-hero.jpg);
-//   background-position: center;
-//   background-size:cover; 
-// }
+overlay
+{
+  max-width: 480px;
+   height: 600px;
+ margin-left: auto;
+   margin-right: auto;
+  background-color: 
+rgba(196, 196, 196, 1);
+ background-image:linear-gradient(to right,
+  rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+ url(../images/Img-hero.jpg);
+  background-position: center;
+  background-size:cover; 
+}
 
-//   .solutions-page
-//  {  
-//    text-align: center;
-//    padding-top:  200px;
-//    padding-bottom:200px;
-//   }
+.solutions-page
+ {  
+  text-align: center;
+ padding-top:  200px;
+ padding-bottom:200px;
+  }
     
 
 
-//   .title-main 
-//   {
-//     text-transform: uppercase;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     width: 696px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 30px;
-//     letter-spacing: 0.06em;
-//     color:var(--primary-text-color-theme-dark);
-//    }  
+ .title-main 
+ {
+  text-transform: uppercase;
+  font-size: 44px;
+  line-height: 1.36;
+  width: 696px;
+ margin-left: auto;
+  margin-right: auto;
+ margin-bottom: 30px;
+ letter-spacing: 0.06em;
+ color:var(--primary-text-color-theme-dark);
+ }  
    
      
-  //    .do 
-  // {
-  //   display: flex; 
-  //   text-align: center;
-  //   gap: 30px;
-  //   &-it
-  // { 
-  // padding-top:0;
-  // }
+     .do 
+  {
+    display: flex;
+      text-align: center;
+   gap: 30px;
+  }
+   .do-it
+ { 
+   padding-top:0;
+   }
   // }
 
   
@@ -365,9 +366,9 @@ fill:var(--secondary-background-fill);
 justify-content: center;
 column-gap: 30px;
 width: 100%;
-@media screen and  (min-width:450px) 
+@media screen and  (min-width: 450px ) 
         {
-          width:calc(100%-30px/2);
+          width:calc(100% - 30px/2);
           
         }
 
@@ -452,9 +453,7 @@ rgba(47, 48, 58, 0.8);
   transition: fill var(--transition-dur-and-func);
   fill:var(--primary-text-color-theme-dark);
   
-}
-// .social-list-link:focus.social-list-icon
-// {
-//   transition: fill var(--transition-dur-and-func);
-//   fill:var(--primary-text-color-theme-dark);
-// }
+ }
+
+
+
