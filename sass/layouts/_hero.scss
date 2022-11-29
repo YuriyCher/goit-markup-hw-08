@@ -53,10 +53,9 @@ rgba(196, 196, 196, 1);
     
 .page__benefits 
 { 
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
  
 }
 
@@ -65,50 +64,27 @@ rgba(196, 196, 196, 1);
  {
   width: 100%;
 
-  // @media screen and  (min-width: $mobile ) 
  
-  // { 
-  //  width:calc((100% - 30px) / 1 );
-  //  // flex-basis: 50%;
-  //  width: 450px;
-  // }
-
-
-  @media screen and  (min-width: $tablet ) 
+//    @media screen and  (min-width: $mobile ) 
+ 
+//   { 
+//     width:calc((100% - 30px) / 1 );
+//    // flex-basis: 50%;
+   
+//  }
+   @media screen and  (min-width: $tablet ) 
  
   {
-    
-
-   width:calc((100% - 60px ) / 2 );
-   // flex-basis: 50%;
-    width: 325px;
+   width:calc((100% - 60px) / 2 );
+  // flex-basis: 50%;
   }
   @media screen and  (min-width: $desktop ) 
  
   {
-    
-
-   width:calc((100% - 120px ) / 4 );
-   // flex-basis: 50%;
-   
+   width:calc((100% - 120px) / 4 );
+  // flex-basis: 50%;
   }
 
-  // width: 270px; 
-
-  // @media screen and  (min-width: $mobile ) 
- 
-  // { 
-  //  width:calc((100% - 30px) / 1 );
-  //  // flex-basis: 50%;
-    
-  // }
-  // @media screen and  (min-width: $tablet ) 
- 
-  // { display: flex;
-  //  width:calc((100% - 30px) / 2 );
-  //  // flex-basis: 50%;
-   
-  // }
 }
 
 
@@ -160,7 +136,9 @@ background-color: var(--secondary-background-color-theme-light);
   .team
  {  
    display: flex;
-  text-align: center;
+  // text-align: center;
+  flex-wrap: wrap;
+  gap: 30px;
   padding-bottom:30px;
   
  }
@@ -327,10 +305,10 @@ background-color: var(--secondary-background-color-theme-light);
 
 
 
- .img-list
- {
- width: 370px;
-}
+//  .img-list
+//  {
+//  width: 370px;
+// }
 
 
 // .card-name
@@ -434,7 +412,7 @@ fill:var(--secondary-background-fill);
  .customers-list 
 {
     display: flex;
-   flex-wrap:wrap;
+    flex-wrap: wrap;
    gap: 30px;
 
   }
@@ -474,7 +452,7 @@ fill:var(--secondary-background-fill);
   {
     
 
-   width:calc((100% - 150px ) / 3 );
+   width:calc((100% - 150px ) / 6);
    // flex-basis: 50%;
    
   }
