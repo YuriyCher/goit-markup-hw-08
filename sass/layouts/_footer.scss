@@ -9,7 +9,32 @@
 {
 display: flex;
 align-items: baseline;
+
+@media screen and  (min-width: $mobile )   {
+  
+  display: flex;
+  gap: 60px;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+@media screen and (min-width: $tablet)
+{
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: stretch;
+
+}
+
+}
+
 .nav__top__list 
 {
   font-style: normal;   
@@ -60,6 +85,14 @@ align-items: baseline;
   }
 
   //  address
+  .foot__top
+  {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
 .foot__top__address
 {
@@ -72,6 +105,13 @@ align-items: baseline;
 {  
 display: flex;gap: 9px;
 flex-direction: column;
+@media screen  and ( min-width: $mobile) {
+ 
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 
@@ -154,6 +194,13 @@ fill: var(--primary-text-color-theme-dark);
 { 
 flex-direction: column;
 margin-left: 70px;
+@media screen and (min-width: $mobile) {
+  flex-direction: column;
+  margin-left: 70px;
+  display: flex;
+  align-items: center; 
+}
+
 }
 
 .join__title
