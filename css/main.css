@@ -535,6 +535,7 @@ button {
 .menu-container {
   padding-left: 40px;
   padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .menu-container .menu-toggle {
@@ -558,7 +559,6 @@ button {
   display: flex;
   padding: 10px;
   color: #fff;
-  text-decoration: none;
 }
 
 .mobile-menu-link {
@@ -571,6 +571,12 @@ button {
   padding-top: 48px;
 }
 
+.mobile-сontacts {
+  list-style: none;
+  text-decoration: none;
+  padding-bottom: 64px;
+}
+
 .mobile-сontacts-tel {
   font-family: Roboto;
   font-size: 34px;
@@ -578,7 +584,7 @@ button {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
-  marker: none;
+  margin-bottom: 32px;
 }
 
 .mobile-сontacts-post {
@@ -592,6 +598,8 @@ button {
 
 .mobile-socials-item {
   display: flex;
+  border: 2px;
+  border-color: #757575;
 }
 
 .mobile-socials-link {
@@ -599,15 +607,32 @@ button {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  fill: #2196F3;
+  color: #2196F3;
   text-decoration: none;
 }
 
 .mobile-socials {
   display: flex;
   gap: 20px;
-  border: 2px;
-  border-color: #757575;
+}
+
+.nav__link {
+  text-decoration: none;
+}
+
+.nav__port {
+  display: block;
+  text-decoration: none;
+  padding: 32px 0;
+  margin: 0;
+}
+
+.nav__studio {
+  margin-right: 93px;
+}
+
+.nav__studio.nav__port {
+  padding: 24px 0;
 }
 
 .nav__logo {
@@ -787,7 +812,7 @@ button {
 }
 
 overlay {
-  max-width: 480px;
+  max-width: auto;
   height: 400px;
   margin-left: auto;
   margin-right: auto;

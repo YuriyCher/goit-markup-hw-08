@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 body {
   background-color: rgb(13, 225, 225);
 }
@@ -34,25 +34,6 @@ body {
   letter-spacing: 0.02em;
   padding: 0;
   background-color: var(--primary-text-color-theme-dark);
-}
-
-.nav__link {
-  text-decoration: none;
-}
-
-.nav__port {
-  display: block;
-  text-decoration: none;
-  padding: 32px 0;
-  margin: 0;
-}
-
-.nav__studio {
-  margin-right: 93px;
-}
-
-.nav__studio.nav__port {
-  padding: 24px 0;
 }
 
 .list {
