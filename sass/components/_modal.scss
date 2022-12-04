@@ -240,11 +240,15 @@ fill:var(--primary-text-color-theme-light);
 
 
 
-   .distribution{
+   .distribution
+   {
     margin-left:auto;
     display: flex;
     flex-wrap: wrap;
-    @media screen and ( min-width: $tablet ){
+
+    @media screen and ( min-width: $tablet )
+    {
+      margin:0;
       display: flex;
       flex-wrap: wrap;
     }
