@@ -39,8 +39,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
 <use href="./images/icon-menu_40px"></use>
 </svg>
 </button>      -->
-
-            <span class="nav__logo">
+          <span class="nav__logo">
 
             <span class="nav__accent__logo ">Web</span>Studio</span></a> 
             <button
@@ -101,7 +100,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
 </header>
 
  <main> 
-<!-- <section  class="overlay solutions-page section">    
+ <section  class="overlay solutions-page section">    
  
 
   <div class="container">   
@@ -112,7 +111,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
        <button class="modal-open-btn button" type="button" data-modal-open >Замовити послугу</button>
   </div>
 
-</section> -->  
+</section>  
  <section class="benefits section">
   <div class="container page">
      <!-- <h2>ПЕРЕВАГИ КОМАНДИ</h2> -->
@@ -172,34 +171,59 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
  <section class="do-it section"> 
   <div class="container">
  
-      <!-- <h2 class="team-liter">Чим ми займаємося</h2>
+      <h2 class="team-liter">Чим ми займаємося</h2>
       <ul  class="list do "> 
         <li class="item-do">
           <div class="gadget-dop">
-          <img  class="desktop-applications" src="./images/box.img.jpg" alt="Печатає на ipad" width="100%" >
-          
+            <picture>
+<source
+ media="(min-width:1200px)"
+ srcset=" ./images\hero\imglg1x-do.jpg, ./images\hero\imglg2x-do.jpg "
+ >
+ <img  class="desktop-applications" src="./images\hero\imglg1x-do.jpg" alt="Печатає на ipad" width="100%"
+ loading="lazy"
+ >
+            </picture>
             <p class="title-desktop-applications">Десктопні додатки</p>
 
           </div>
           
         </li>
+
         <li class="item-do">
           <div class="gadget-dop">
-           <img class="mobile-applications"   src="./images/box2.img.jpg" alt="Печатає на ifone" width="100%">
-           
-            <p class="title-mobile-applications">Мобільні додатки</p>
+            <picture>
+              <source
+               media="(min-width:1200px)"
+               srcset="./images\hero\imglg1x-do-1.jpg, ./images\hero\imglg2x-do-1.jpg "
+               >
+               <img  class="mobile-applications" src="./images\hero\imglg1x-do.jpg" alt="Печатає на ifone" width="100%"
+               loading="lazy">  
+               
+                 </picture>
+                 <p class="title-mobile-applications">Мобільні додатки</p>
+                </div>          
+              </li>
+
+              <li class="item-do">
+                <div class="gadget-dop">
 
 
-           </div>
-          
-        </li>
-        <li class="item-do">
-          <div class="gadget-dop">
-           <img class="design-solutions"   src="./images/box3.img.jpg" alt="Працює на ipad" width="100%">
-           
-
+                          <picture>
+                            <source
+                             media="(min-width:1200px)"
+                             srcset=" ./images\hero\imglg1x-do-2.jpg, ./images\hero\imglg2x-do-2.jpg "
+                             >
+                             <img  class="design-solutions" src="./images\hero\imglg1x-do-2.jpg" alt="Печатає на ipad" width="100%"
+                             loading="lazy"
+                             >
+                                        </picture>      
+           <!-- <img class=""   src="./images/box2.img.jpg" alt="" width="100%"> -->
             <p class="title-design-solutions">Дизайнерські рішення</p>
-
+    
+        
+           <!-- <img class=""   src="./images/box3.img.jpg" alt="Працює на ipad" width="100%"> -->
+                  
            </div>
         </li>
       </ul>
@@ -211,7 +235,42 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
     <h2 class="team-liter">Наша команда</h2>
       <ul class="list team">
         
-        <li class="item-team"><img src="./images/foto-Igor.jpg" alt="Ігорь Демяьяненко" width="270">
+        <li class="item-team">
+          
+         <picture>
+
+          <source media="(min-width: 1200px)"
+          srcset="./images\team\imglg1x-team.webp, ./images\team\imglg2x-team.webp "
+          type="image/webp"
+          >
+
+          <source media="(min-width: 1200px)"
+          srcset="./images\team\imglg1x-team.jpg, ./images\team\imglg2x-team.jpg "
+          type="image/jpg"
+          >
+          <source media="(min-width: 768px)"
+          srcset="./images\team\imgmg1x-team.webp, ./images\team\imglg2x-team.webp"
+          type="image/webp"
+          >
+
+
+          <source media="(min-width: 768px)"
+          srcset="./images\team\imgmg1x-team.jpg, ./images\team\imgmg2x-team.jpg"
+          type="image/jpg"
+          >
+          <source media="(max-width: 767px)"
+          srcset="./images\team\imgsm1x-team.webp, ./images\team\imgsm2x-team.webp"
+          type="image/webp"
+          >
+
+          <source media="(max-width: 767px)"
+          srcset="./images\team\imgsm1x-team.jpg, ./images\team\imgsm2x-team.jpg"
+          type="image/jpg"
+          >
+          <img src="./images\team\imgsm1x-team.jpg" alt="Ігорь Демяьяненко" width="450"
+          loading="lazy">
+</picture> 
+
         <div class="card-bottom">
                <h3 class="team-name">Ігор Дем'яненко</h3>
                   <p class="team-speciality">Product Designer</p>
@@ -249,7 +308,40 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
         </li>
            
        
-        <li class="item-team"><img src="./images/foto-olga.jpg" alt="Ольга Репіна" width="270">
+        <li class="item-team">
+         <picture>
+
+          <source media="(min-width: 1200px)"
+          srcset="./images\team\imglg1x-team-1.webp, ./images\team\imglg2x-team-1.webp "
+          type="image/webp"
+          >
+
+          <source media="(min-width: 1200px)"
+          srcset="./images\team\imglg1x-team-1.jpg, ./images\team\imglg2x-team-1.jpg"
+          type="image/jpg"
+          >
+          <source media="(min-width: 768px)"
+          srcset="./images\team\imgmg1x-team-1.webp, ./images\team\imgmg2x-team-1.webp "
+          type="image/webp"
+          >
+          <source media="(min-width: 768px)"
+          srcset="./images\team\imgmg1x-team-1.jpg, ./images\team\imgmg2x-team-1.jpg"
+          type="image/jpg"
+          >
+          <source media="(max-width: 767px)"
+          srcset="./images\team\imgsm1x-team-1.webp, ./images\team\imgsm2x-team-1.webp"
+          type="image/webp"
+          >
+
+          <source media="(max-width: 767px)"
+          srcset="./images\team\imgsm1x-team-1.jpg, ./images\team\imgsm2x-team-1.jpg"
+          type="image/jpg"
+          >
+
+          <img src="./images\team\imgsm1x-team-1.jpg" alt="Ольга Репіна" width="450"
+          loading="lazy">
+
+        </picture> 
           <div class="card-bottom">   
             <h3 class="team-name">Ольга Рєпіна</h3>
               <p class="team-speciality">Frontend Developer</p>
@@ -289,7 +381,42 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
 
          </li>
 
-         <li class="item-team"><img src="./images/foto-mukola.jpg" alt="Микола Єрмаков" width="270">
+         <li class="item-team">
+          <picture>
+
+            <source media="(min-width: 1200px)"
+            srcset="./images\team\imglg1x-team-2.webp, ./images\team\imglg2x-team-2.webp "
+            type="image/webp"
+            >
+
+
+            <source media="(min-width: 1200px)"
+            srcset="./images\team\imglg1x-team-2.jpg, ./images\team\imglg2x-team-2.jpg"
+            type="image/jpg"
+            >
+
+            <source media="(min-width: 768px)"
+            srcset="./images\team\imgmg1x-team-2.webp, ./images\team\imgmg2x-team-2.webp "
+            type="image/webp"
+            >
+
+            <source media="(min-width: 768px)"
+            srcset="./images\team\imgmg1x-team-2.jpg, ./images\team\imgmg2x-team-2.jpg"
+            type="image/jpg"
+            >
+            <source media="(max-width: 767px)"
+            srcset="./images\team\imgsm1x-team-2.webp, ./images\team\imgsm2x-team-2.webp "
+            type="image/webp"
+            > 
+            <source media="(max-width: 767px)"
+            srcset="./images\team\imgsm1x-team-2.jpg, ./images\team\imgsm2x-team-2.jpg "
+            type="image/jpg"
+            >  
+
+          <img src="./images\team\imgsm1x-team-2.jpg" alt="Микола Єрмаков" width="450"
+          loading="lazy">
+
+          </picture>
           <div class="card-bottom">
              <h3 class="team-name">Михайло Єрмаков</h3>
                <p class="team-speciality">UI Designer</p>
@@ -332,7 +459,42 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
 
 
       
-        <li class="item-team"><img src="./images/foto-muhalo.jpg" alt="Михайло Тарасов" width="270">
+        <li class="item-team">
+          <picture>
+            <source media="(min-width: 1200px)"
+            srcset="./images\team\imglg1x-team-3.webp, ./images\team\imglg2x-team-3.webp "
+            type="image/webp"
+            >
+
+            <source media="(min-width: 1200px)"
+          srcset="./images\team\imglg1x-team-3.jpg, ./images\team\imglg2x-team-3.jpg"
+          type="image/jpg"
+          >
+
+          <source media="(min-width: 768px)"
+          srcset="./images\team\imgmg1x-team-3.webp, ./images\team\imgmg2x-team-3.webp"
+          type="image/webp"
+          >
+
+          <source media="(min-width: 768px)"
+          srcset="./images\team\imgmg1x-team-3.jpg, ./images\team\imgmg2x-team-3.jpg"
+          type="image/jpg"
+          >
+          <source media="(max-width: 767px)"
+          srcset="./images\team\imgsm1x-team-3.webp, ./images\team\imgsm2x-team-3.webp"
+          type="image/webp"
+          >
+
+          <source media="(max-width: 767px)"
+          srcset="./images\team\imgsm1x-team-3.jpg, ./images\team\imgmg2x-team-3.jpg"
+          type="image/jpg"
+          >
+
+
+          <img src="./images\team\imgsm1x-team-3.jpg" alt="Михайло Тарасов" width="450"
+          loading="lazy">
+          </picture>
+
          <div class="card-bottom">  
           <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-speciality">Marketing</p>
@@ -565,7 +727,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
       
          
        
-      <!-- </label>
+       </label>
      </span>
         </form>  
       <form class="modal-form"> 
@@ -592,7 +754,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
       
           <use  class="modal-form-own-checkbox-incon" href="./images/galka-chel.svg#icon-galrf-svg"></use>
       
-        </svg>  -->
+        </svg> 
       
  
       <Погоджуюся з розсилкою та приймаю<a class="titel-contract"  href="#"> Умови договору </a>

@@ -559,6 +559,7 @@ button {
   display: flex;
   padding: 10px;
   color: #fff;
+  text-decoration: none;
 }
 
 .mobile-menu-link {
@@ -812,14 +813,43 @@ button {
 }
 
 overlay {
-  max-width: auto;
-  height: 400px;
+  max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(196, 196, 196);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
   background-position: center;
   background-size: cover;
+  background-color: rgb(196, 196, 196);
+}
+@media screen and (min-width: 480px) {
+  overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgsm-1xhero.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgsm2x-hero.jpg);
+  }
+}
+@media screen and (min-width: 481px) {
+  overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgmg1x-hero.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgmg2x-hero.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imglg1x-hero.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imglg2x-hero.jpg);
+  }
 }
 
 .solutions-page {
@@ -841,12 +871,41 @@ overlay {
 }
 
 .do {
-  text-align: center;
-  gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .do {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+  }
 }
 
 .do-it {
   padding-top: 0;
+}
+
+.gadget-dop {
+  position: relative;
+}
+
+.title-design-solutions,
+.title-mobile-applications,
+.title-desktop-applications {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-dark);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .page__benefits {
@@ -1063,29 +1122,6 @@ overlay {
 }
 .customers-list-icon:focus, .customers-list-icon:hover {
   fill: var(--primary-text-color-theme-light);
-}
-
-.gadget-dop {
-  position: relative;
-}
-
-.title-design-solutions,
-.title-mobile-applications,
-.title-desktop-applications {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 70px;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--primary-text-color-theme-dark);
-  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .social-list-link:hover.social-list-icon {
