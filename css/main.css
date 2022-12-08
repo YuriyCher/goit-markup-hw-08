@@ -521,7 +521,9 @@ button {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
   background-color: #fff;
   z-index: 999;
   transform: translateX(100%);
@@ -530,12 +532,6 @@ button {
 
 .menu-container.is-open {
   transform: translateX(0);
-}
-
-.menu-container {
-  padding-left: 40px;
-  padding-top: 48px;
-  padding-bottom: 48px;
 }
 
 .menu-container .menu-toggle {
@@ -568,14 +564,19 @@ button {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
-  gap: 32px;
+  text-decoration: none;
   padding-top: 48px;
 }
 
 .mobile-сontacts {
   list-style: none;
   text-decoration: none;
+  padding: 0;
   padding-bottom: 64px;
+}
+
+.mobile-contacts-item:first-child {
+  margin-bottom: 32px;
 }
 
 .mobile-сontacts-tel {
@@ -585,7 +586,7 @@ button {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .mobile-сontacts-post {
@@ -599,8 +600,12 @@ button {
 
 .mobile-socials-item {
   display: flex;
-  border: 2px;
-  border-color: #757575;
+}
+
+.mobile-socials-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .mobile-socials-link {
@@ -608,13 +613,15 @@ button {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196F3;
   text-decoration: none;
+  color: #2196F3;
 }
 
 .mobile-socials {
   display: flex;
-  gap: 20px;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
 }
 
 .nav__link {
@@ -813,43 +820,14 @@ button {
 }
 
 overlay {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 1200px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #c4c4c4;
   background-position: center;
   background-size: cover;
-  background-color: rgb(196, 196, 196);
-}
-@media screen and (min-width: 480px) {
-  overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgsm-1xhero.jpg);
-  }
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgsm2x-hero.jpg);
-  }
-}
-@media screen and (min-width: 481px) {
-  overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgmg1x-hero.jpg);
-  }
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgmg2x-hero.jpg);
-  }
-}
-@media screen and (min-width: 769px) {
-  overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imglg1x-hero.jpg);
-  }
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imglg2x-hero.jpg);
-  }
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgsm1x-hero.jpg);
 }
 
 .solutions-page {
