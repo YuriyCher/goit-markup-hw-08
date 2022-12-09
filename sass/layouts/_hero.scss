@@ -7,7 +7,7 @@
   margin-right: auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)),url(../../images/Img-hero.jpg);
+   rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
   background-position: center;
   background-size: cover;
   // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
@@ -368,18 +368,18 @@ background-color: var(--secondary-background-color-theme-light);
   background: var(--primary-text-color-theme-dark);
 }
  
-  .current::after 
-{
-  position: absolute;
-  content:"";
-  bottom: -1px;
-  left: 0;
-  width:auto;
-  height: 4px;
-  background-color:var(--primary-text-color-theme-light);
-  border-radius: 2px;
+//   .current::after 
+// {
+//   position: absolute;
+//   content:"";
+//   bottom: -1px;
+//   left: 0;
+//   width:auto;
+//   height: 4px;
+//   background-color:var(--primary-text-color-theme-light);
+//   border-radius: 2px;
 
-}
+// }
 
 .box 
  {
@@ -448,14 +448,14 @@ background-color: var(--secondary-background-color-theme-light);
 //    padding-right: 0px;
 //  }  
 
- .currentColor
-{
-  color:var(--primary-text-color-theme-light);
- &.filter-list.Усі:hover
-{
- background-color:var(--secondary-background-btn-color-theme-light);
- }
- }
+//  .currentColor
+// {
+//   color:var(--primary-text-color-theme-light);
+//  &.filter-list.Усі:hover
+// {
+//  background-color:var(--secondary-background-btn-color-theme-light);
+//  }
+//  }
 
 
 
