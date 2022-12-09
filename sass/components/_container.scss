@@ -20,7 +20,8 @@ $desktop: 1200px;
         //  mobile
         @media screen and  (min-width: 480px)
         {
-          width: 480px;  
+          width: 480px;
+          //  height:858px;
         }
         // tablet
         @media screen and  (min-width: 768px)

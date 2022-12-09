@@ -104,7 +104,18 @@ pointer-events: none;
   cursor: pointer;
   padding: 40px;
 
-  &-close-btn
+  @media (max-width: 479px) {
+       
+    display: none;
+  }
+
+
+@media screen and  (min-width:$mobile )
+{ max-width: 450px;
+  height: 609px;
+}
+}
+  .modal-close-btn
 {   
     position: absolute;
     width: 30px;
@@ -127,7 +138,7 @@ pointer-events: none;
 }
 
 }
-}
+
 
 
 

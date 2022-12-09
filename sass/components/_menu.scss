@@ -20,7 +20,7 @@
     border-radius: 50%;
     outline: none;
   }
-  
+ 
   @media (min-width: 768px) {
     .menu-toggle {
       display: none;
@@ -31,7 +31,34 @@
   .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
   }
-  
+
+   .icon-menu_40pxburger-menu-40{
+    width: 40px;
+    height: 40px;
+    color: #000;
+   }
+    .icon-menu_40pxburger-menu-40:focus,
+    .icon-menu_40pxburger-menu-40:hover
+   {
+    background-color:
+    #2196F3;
+   }
+
+   .icon-close_24pxclose-burger-menu{
+    width: 19px;
+    height: 19px;
+    color: #000;
+   }
+
+   .icon-close_24pxclose-burger-menu:focus,
+   .icon-close_24pxclose-burger-menu:hover
+   {
+    background-color:
+    #2196F3;
+   }
+
+
+
   .menu-container {
     position: fixed;
     top: 0;
@@ -64,20 +91,21 @@
   
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+
+    @media (max-width: 479px) {
+       
+        display: none;
+      }
+    
+    @media screen and (max-width:$mobile ){
+      overflow: hidden;
+    }
   }
   
   .menu-container.is-open {
     transform: translateX(0);
   }
-// .menu-container{ 
-//   padding-top: 48px;
-//   padding-bottom: 48px;
-//   padding-left:  40px;
- 
- 
-  
 
-// }
   
   .menu-container .menu-toggle {
     position: absolute;
@@ -122,10 +150,11 @@
   text-decoration:none;
     padding: 0;
   padding-bottom: 64px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 32px;
 }
-.mobile-contacts-item:first-child {
-  margin-bottom: 32px;
-}
+
 
 .mobile-сontacts-tel
 {
@@ -135,8 +164,6 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 color:#2196F3;
 text-decoration: none;
-padding-bottom: 32px;
-
 
 }
 
@@ -176,7 +203,6 @@ letter-spacing: 0.02em;
 text-decoration: none;
  color: 
 #2196F3;
-
 
 }
 

@@ -13,7 +13,7 @@ rel="stylesheet">
 href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
 
 
-   <link rel="stylesheet" href="./css/styles.css"> 
+   <!-- <link rel="stylesheet" href="./css/styles.css">  -->
 
 
    <link rel="stylesheet" href="./css/main.min.css">
@@ -33,12 +33,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
    
        
 
-                  <!-- <button type="button"class="menu__button" > 
-            <svg width="40" height="40">
-<use href="./images/close 40.svg/icon-close_40px" ></use>
-<use href="./images/icon-menu_40px"></use>
-</svg>
-</button>      -->
+   
           <span class="nav__logo">
 
             <span class="nav__accent__logo ">Web</span>Studio</span></a> 
@@ -47,25 +42,17 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
+          <svg class="icon-menu_40pxburger-menu-40" width="40"
+          height="40">
+          <use href="./images/310.svg#icon-menu_40pxburger-menu-40"></use>
+          </svg>
+
           </button>
    
      <ul class="list nav__menu nav__menu_left">
         <li class="nav__item">
-           <a class="nav__port nav__link    nav__stil" href="./index.html">Студія</a>
-          <nav__menu currentColorcurrent>      
+           <a class="nav__port nav__link  currentColor   nav__stil" href="./index.html">Студія</a>
+          <!-- <nav__menu >        -->
              </li>
         <li class="nav__item">
            <a class="nav__link   nav__port" href="./portfolio.html">Портфоліо</a>
@@ -171,7 +158,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
  <section class="do-it section"> 
   <div class="container">
  
-      <h2 class="team-liter">Чим ми займаємося</h2>
+      <h2 class="do-liter">Чим ми займаємося</h2>
       <ul  class="list do "> 
         <li class="item-do">
           <div class="gadget-dop">
@@ -534,7 +521,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
   
     </div>
      </section>
-     <section class="section">
+     <section class="customers section">
       <div class="container">
         <h2 class="team-liter">Постійні клієнти</h2>
         <ul class="customers-list list">
@@ -775,7 +762,16 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
  <!-- <mobil menu> -->
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
-      <svg
+
+      <svg class="icon-close_24pxclose-burger-menu" width="19"
+      height="19">
+      <use href="./images/310.svg#icon-close_24pxclose-burger-menu"></use>
+      </svg>
+
+
+    
+
+      <!-- <svg
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
@@ -787,7 +783,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
           clip-rule="evenodd"
         ></path>
-      </svg>
+      </svg> -->
     </button>
 
     <ul class="mobile-menu">

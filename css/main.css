@@ -189,6 +189,18 @@ button {
   cursor: pointer;
   padding: 40px;
 }
+@media (max-width: 479px) {
+  .modal {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+    height: 609px;
+  }
+}
+
 .modal-close-btn {
   position: absolute;
   width: 30px;
@@ -407,6 +419,11 @@ button {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 479px) {
+  .distribution {
+    display: none;
+  }
+}
 
 .title-distribution {
   display: flex;
@@ -446,7 +463,7 @@ button {
 
 .modal-distribution-input {
   padding: 15px 16px;
-  width: 358px;
+  max-width: 358px;
   background-color: inherit;
   outline: transparent;
   border-radius: 4px;
@@ -456,7 +473,7 @@ button {
 }
 @media screen and (min-widt: 480px) {
   .modal-distribution-input {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -513,6 +530,28 @@ button {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.icon-menu_40pxburger-menu-40 {
+  width: 40px;
+  height: 40px;
+  color: #000;
+}
+
+.icon-menu_40pxburger-menu-40:focus,
+.icon-menu_40pxburger-menu-40:hover {
+  background-color: #2196F3;
+}
+
+.icon-close_24pxclose-burger-menu {
+  width: 19px;
+  height: 19px;
+  color: #000;
+}
+
+.icon-close_24pxclose-burger-menu:focus,
+.icon-close_24pxclose-burger-menu:hover {
+  background-color: #2196F3;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -528,6 +567,16 @@ button {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+@media (max-width: 479px) {
+  .menu-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-container {
+    overflow: hidden;
+  }
 }
 
 .menu-container.is-open {
@@ -573,10 +622,9 @@ button {
   text-decoration: none;
   padding: 0;
   padding-bottom: 64px;
-}
-
-.mobile-contacts-item:first-child {
-  margin-bottom: 32px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .mobile-сontacts-tel {
@@ -586,7 +634,6 @@ button {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
-  padding-bottom: 32px;
 }
 
 .mobile-сontacts-post {
@@ -819,33 +866,116 @@ button {
   margin-right: 10px;
 }
 
-overlay {
-  max-width: 1200px;
-  height: 400px;
+.nav__stil {
+  border-bottom: 2px solid #2196F3;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 360px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heder/imgsm1x-hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
+  background-color: rgb(196, 196, 196);
+}
+@media screen and (min-width: 480px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm1x-hero.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm2x-hero.jpg);
+  }
+}
+@media screen and (min-width: 481px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg1x-hero.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg2x-hero.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .overlay {
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg1x-hero.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.jpg);
+  }
 }
 
 .solutions-page {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+@media screen and (max-width: 768px) {
+  .solutions-page {
+    padding-top: 118px;
+    padding: bottom 198px;
+  }
+}
+@media screen and (max-width: 1198px) {
+  .solutions-page {
+    padding-top: 118px;
+    padding: bottom 198px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .solutions-page {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
 }
 
 .title-main {
-  text-transform: uppercase;
-  font-size: 44px;
-  line-height: 1.36;
-  width: 696px;
+  font-family: Roboto, sans-serif;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   color: var(--primary-text-color-theme-dark);
+}
+@media screen and (max-width: 768px) {
+  .title-main {
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.61;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .title-main {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.61;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-main {
+    text-transform: uppercase;
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .do {
@@ -861,6 +991,26 @@ overlay {
 
 .do-it {
   padding-top: 0;
+}
+@media screen and (max-width: 479px) {
+  .do-it {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.do-liter {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .do-liter {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: var(--accent-color);
+  }
 }
 
 .gadget-dop {
@@ -949,6 +1099,12 @@ overlay {
 .team-section {
   background: var(--secondary-background-color-theme-light);
 }
+@media screen and (max-width: 479px) {
+  .team-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .team-liter {
   font-size: 36px;
@@ -997,10 +1153,21 @@ overlay {
   content: "";
   bottom: -1px;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 4px;
   background-color: var(--primary-text-color-theme-light);
   border-radius: 2px;
+}
+
+.box {
+  border-bottom: 1px solid var(--secondary-color-border);
+}
+
+.currentColor {
+  color: var(--primary-text-color-theme-light);
+}
+.currentColor.filter-list.Усі:hover {
+  background-color: var(--secondary-background-btn-color-theme-light);
 }
 
 .card-bottom {
@@ -1048,6 +1215,13 @@ overlay {
 .social-list-icon:focus {
   transition: fill var(--transition-dur-and-func);
   fill: var(--primary-text-color-theme-dark);
+}
+
+@media screen and (max-width: 479px) {
+  .customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .customers-list {

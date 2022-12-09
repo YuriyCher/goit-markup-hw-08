@@ -252,7 +252,10 @@ fill:var(--primary-text-color-theme-light);
       display: flex;
       flex-wrap: wrap;
     }
-
+    @media (max-width: 479px) {
+       
+      display: none;
+    }
 } 
 
 .title-distribution{
@@ -312,7 +315,7 @@ fill:var(--primary-text-color-theme-light);
     
         padding: 15px 16px;
      
-        width: 358px;
+        max-width: 358px;
         background-color: inherit;
         outline: transparent;
         border-radius: 4px;
@@ -322,7 +325,7 @@ fill:var(--primary-text-color-theme-light);
     
      @media screen and (min-widt: $mobile )
     {
-      width: 450px; 
+      max-width: 450px; 
     }
  }
 
