@@ -883,7 +883,7 @@ button {
 
 .overlay {
   max-width: 1600px;
-  height: 360px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -902,7 +902,7 @@ button {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm2x-hero.jpg);
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg1x-hero.jpg);
   }
@@ -912,7 +912,7 @@ button {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg2x-hero.jpg);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .overlay {
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg1x-hero.jpg);
@@ -928,13 +928,13 @@ button {
 .solutions-page {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 481px) {
   .solutions-page {
     padding-top: 118px;
     padding: bottom 198px;
   }
 }
-@media screen and (max-width: 1198px) {
+@media screen and (max-width: 1199px) {
   .solutions-page {
     padding-top: 118px;
     padding: bottom 198px;
@@ -954,9 +954,13 @@ button {
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   color: var(--primary-text-color-theme-dark);
-  text-transform: uppercase;
-  font-size: 26px;
-  line-height: 1.61;
+}
+@media screen and (max-width: 768px) {
+  .title-main {
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 @media screen and (max-width: 1199px) {
   .title-main {
