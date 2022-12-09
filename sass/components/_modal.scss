@@ -254,10 +254,10 @@ fill:var(--primary-text-color-theme-light);
       display: flex;
       flex-wrap: wrap;
     }
-    @media (max-width: 479px) {
+    // @media (max-width: 479px) {
        
-      display: none;
-    }
+    //   display: none;
+    // }
 } 
 
 .title-distribution{
@@ -325,10 +325,10 @@ fill:var(--primary-text-color-theme-light);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         color: rgba(255, 255, 255, 0.6);
     
-     @media screen and (min-widt: $mobile )
-    {
-      max-width: 450px; 
-    }
+    //  @media screen and (min-widt: $mobile )
+    // {
+    //   max-width: 450px; 
+    // }
  }
 
 

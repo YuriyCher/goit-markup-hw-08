@@ -44,7 +44,7 @@ background-image: linear-gradient(to right,
 }
 
 // // desktop screen
- @media screen and  (min-width: $desktop) { height: 600px;
+ @media screen and  (max-width: $desktop) { height: 600px;
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
    url(../images/heder/imglg1x-hero.jpg);
@@ -92,14 +92,14 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
    margin-bottom: 30px;
    letter-spacing: 0.06em;
    color:var(--primary-text-color-theme-dark);
-   
+ 
    @media screen and  (max-width: $tablet )
   {
   
      text-transform: uppercase;
      font-size: 26px;
      line-height: 1.61;
-   
+     max-width: 360px;
    }
 
    @media screen and  (max-width: 1199px )
