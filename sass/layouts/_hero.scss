@@ -1,7 +1,7 @@
 .overlay
 {
   max-width: 1600px;
-  height: 360px;
+  height: 400px;
 
   margin-left: auto;
   margin-right: auto;
@@ -10,15 +10,13 @@
    rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
   background-position: center;
   background-size: cover;
-  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-  //  rgba(47, 48, 58, 0.4)), url(../../images/Img-hero.jpg);
-  //  background-color: rgba(196, 196, 196, 1);
+ 
 // mobile screen
   @media screen and  (min-width: $mobile )
-   {  height: 400px;
+   { 
  background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/heder/imgsm1x-hero.jpg);
+       url(../images/heder/imgsm1x-hero.jpg);}
 
 //  mobile screen retina
 @media (min-device-pixel-ratio: 2),
@@ -27,13 +25,13 @@
 background-image: linear-gradient(to right,
 rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
  url(../images/heder/imgsm2x-hero.jpg);
- }
+
 }
 // tablet screen
- @media screen and  (min-width: $tablet ) { height: 400px;
+ @media screen and  (min-width: $tablet ) {
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg1x-hero.jpg);
-
+}
 // // tablet screen retina
 @media (min-device-pixel-ratio: 2),
  (min-resolution: 192dpi),
@@ -42,12 +40,12 @@ background-image: linear-gradient(to right,
  rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url(../images/heder/imgmg2x-hero.jpg);
  }
-}
+
 // // desktop screen
- @media screen and  (min-width: $desktop) { 
+ @media screen and  (min-width: $desktop) { height: 600px;
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-   url(../images/heder/imglg1x-hero.jpg);
+   url(../images/heder/imglg1x-hero.jpg);}
  
  // // desktop screen retina
  @media (min-device-pixel-ratio: 2),
@@ -59,7 +57,7 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 
 
  }
-}
+
  }
 
 
@@ -76,7 +74,7 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     padding-top:  118px;
      padding: bottom 198px;
    }
-  @media screen and  (max-width: 1200px )
+  @media screen and  (max-width: $desktop )
   {
  padding-top:  200px;
  padding-bottom:280px;
@@ -368,18 +366,6 @@ background-color: var(--secondary-background-color-theme-light);
   background: var(--primary-text-color-theme-dark);
 }
  
-//   .current::after 
-// {
-//   position: absolute;
-//   content:"";
-//   bottom: -1px;
-//   left: 0;
-//   width:auto;
-//   height: 4px;
-//   background-color:var(--primary-text-color-theme-light);
-//   border-radius: 2px;
-
-// }
 
 .box 
  {
