@@ -242,10 +242,12 @@ fill:var(--primary-text-color-theme-light);
 
    .distribution
    {
+    @media screen and ( min-width: $desktop )
+    {
     margin-left:auto;
     display: flex;
     flex-wrap: wrap;
-
+    }
     @media screen and ( min-width: $tablet )
     {
       margin:0;
