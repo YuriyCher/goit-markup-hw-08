@@ -12,11 +12,11 @@
   background-size: cover;
  
 // mobile screen
-  @media screen and  (min-width: $mobile )
+  @media screen and  (max-width: $mobile )
    { 
  background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-       url(../images/heder/imgsm1x-hero.jpg);}
+       url(../images/heder/imgsm1x-hero.jpg);
 
 //  mobile screen retina
 @media (min-device-pixel-ratio: 2),
@@ -25,13 +25,14 @@
 background-image: linear-gradient(to right,
 rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
  url(../images/heder/imgsm2x-hero.jpg);
-
 }
+}
+
 // tablet screen
- @media screen and  (min-width: $tablet ) {
+ @media screen and  (max-width: $tablet ) {
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg1x-hero.jpg);
-}
+
 // // tablet screen retina
 @media (min-device-pixel-ratio: 2),
  (min-resolution: 192dpi),
@@ -40,12 +41,13 @@ background-image: linear-gradient(to right,
  rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url(../images/heder/imgmg2x-hero.jpg);
  }
+}
 
 // // desktop screen
- @media screen and  (min-width: $desktop) { height: 600px;
+ @media screen and  (max-width: $desktop) { height: 600px;
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-   url(../images/heder/imglg1x-hero.jpg);}
+   url(../images/heder/imglg1x-hero.jpg);
  
  // // desktop screen retina
  @media (min-device-pixel-ratio: 2),
@@ -55,7 +57,7 @@ background-image: linear-gradient(to right,
 rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
  url(../images/heder/imglg2x-hero.jpg);
 
-
+}
  }
 
  }
@@ -107,7 +109,7 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     text-transform: uppercase;
     font-size: 26px;
     line-height: 1.61;
-     width: 360px;
+     min-width: 360px;
   
   }
   
