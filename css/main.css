@@ -954,19 +954,16 @@ button {
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   color: var(--primary-text-color-theme-dark);
-}
-@media screen and (max-width: 768px) {
-  .title-main {
-    text-transform: uppercase;
-    font-size: 26px;
-    line-height: 1.61;
-  }
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.61;
 }
 @media screen and (max-width: 1199px) {
   .title-main {
     text-transform: uppercase;
     font-size: 26px;
     line-height: 1.61;
+    width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {

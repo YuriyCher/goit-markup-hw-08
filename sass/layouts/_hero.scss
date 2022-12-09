@@ -82,14 +82,14 @@ background-image: linear-gradient(to right,
    margin-bottom: 30px;
    letter-spacing: 0.06em;
    color:var(--primary-text-color-theme-dark);
-  
+    text-transform: uppercase;
+     font-size: 26px;
+     line-height: 1.61;
    @media screen and  (max-width: $tablet )
   {
   
     
-     text-transform: uppercase;
-     font-size: 26px;
-     line-height: 1.61;
+   
    }
 
    @media screen and  (max-width: 1199px )
@@ -99,7 +99,7 @@ background-image: linear-gradient(to right,
     text-transform: uppercase;
     font-size: 26px;
     line-height: 1.61;
-    // width: auto;
+     width: 360px;
   
   }
   
