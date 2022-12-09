@@ -937,13 +937,13 @@ button {
     padding: bottom 198px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .solutions-page {
     padding-top: 118px;
     padding: bottom 198px;
   }
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1200px) {
   .solutions-page {
     padding-top: 200px;
     padding-bottom: 280px;
