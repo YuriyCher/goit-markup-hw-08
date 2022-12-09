@@ -1,18 +1,18 @@
 .overlay
 {
   max-width: 1600px;
-  height: 600px;
+  height: 360px;
 
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)),url(../images/Img-hero.jpg);
+   rgba(47, 48, 58, 0.4)),url(../../images/Img-hero.jpg);
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
-   background-color: rgba(196, 196, 196, 1);
+  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+  //  rgba(47, 48, 58, 0.4)), url(../../images/Img-hero.jpg);
+  //  background-color: rgba(196, 196, 196, 1);
 // mobile screen
   @media screen and  (min-width: $mobile )
    {  height: 400px;
@@ -39,24 +39,28 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
  (min-resolution: 192dpi),
  (min-resolution: 2dppx) {
 background-image: linear-gradient(to right,
- rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg2x-hero.jpg);
+ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/heder/imgmg2x-hero.jpg);
  }
 }
 // // desktop screen
  @media screen and  (min-width: $desktop) { 
   background-image: linear-gradient(to right,
-  rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg1x-hero.jpg);
+  rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+   url(../images/heder/imglg1x-hero.jpg);
  
  // // desktop screen retina
  @media (min-device-pixel-ratio: 2),
  (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
- background-image: linear-gradient(to right,
- rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.jpg);
+  (min-resolution: 2dppx) {
+background-image: linear-gradient(to right,
+rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+ url(../images/heder/imglg2x-hero.jpg);
 
 
  }
-} }
+}
+ }
 
 
 .solutions-page
