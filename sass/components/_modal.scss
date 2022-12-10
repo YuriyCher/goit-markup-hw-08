@@ -254,10 +254,10 @@ fill:var(--primary-text-color-theme-light);
       display: flex;
       flex-wrap: wrap;
     }
-    // @media (max-width: 479px) {
+     @media (max-width: 479px) {
        
-    //   display: none;
-    // }
+      display: none;
+     }
 } 
 
 .title-distribution{
