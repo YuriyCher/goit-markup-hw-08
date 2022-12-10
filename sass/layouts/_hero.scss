@@ -12,6 +12,20 @@
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
    rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
 // mobile screen
+@media screen and  (max-width: 479px )
+{  height: 400px;
+background-image: linear-gradient(to right,
+   rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm1x-hero.jpg);
+
+//  mobile screen retina
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+background-image: linear-gradient(to right,
+rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm2x-hero.jpg);
+}
+}
+
   @media screen and  (min-width: $mobile )
   {  height: 400px;
  background-image: linear-gradient(to right,
