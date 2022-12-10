@@ -327,7 +327,7 @@ fill:var(--primary-text-color-theme-light);
     
      @media screen and (max-widt: $tablet )
     {
-      max-width: 450px; 
+      min-width: 450px; 
     }
  }
 

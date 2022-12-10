@@ -475,7 +475,7 @@ button {
 }
 @media screen and (max-widt: 768px) {
   .modal-distribution-input {
-    max-width: 450px;
+    min-width: 450px;
   }
 }
 
