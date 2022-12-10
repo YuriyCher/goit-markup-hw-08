@@ -1,7 +1,7 @@
 .overlay
 {
   max-width: 1600px;
-  height: 360px;
+  height: 400px;
 
   margin-left: auto;
   margin-right: auto;
@@ -13,7 +13,7 @@
    rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
 // mobile screen
   @media screen and  (max-width: $mobile )
-  { height: 400px;
+  { 
  background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm1x-hero.jpg);
 
@@ -27,7 +27,7 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm2x-hero.
 }
 
 // tablet screen
- @media screen and  (min-width: $tablet ) { height: 400px;
+ @media screen and  (max-width: $tablet ) {
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg1x-hero.jpg);
 
