@@ -1,8 +1,6 @@
 .overlay
 {
   max-width: 1600px;
-  height: 360px;
-
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -13,8 +11,8 @@
    rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
 // mobile screen
 @media screen and  (max-width: 479px )
-{  height: 400px;
-background-image: linear-gradient(to right,
+{ 
+ background-image: linear-gradient(to right,
    rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm1x-hero.jpg);
 
 //  mobile screen retina
@@ -27,8 +25,8 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm2x-hero.
 }
 
   @media screen and  (min-width: $mobile )
-  {  height: 400px;
- background-image: linear-gradient(to right,
+  {  
+  background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm1x-hero.jpg);
 
 //  mobile screen retina
@@ -41,7 +39,7 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm2x-hero.
 }
 
 // tablet screen
- @media screen and  (min-width: $tablet ) {height: 400px;
+ @media screen and  (min-width: $tablet ) {
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg1x-hero.jpg);
 
@@ -55,7 +53,7 @@ background-image: linear-gradient(to right,
 }
 
 // // desktop screen
- @media screen and  (mim-width: $desktop ) { height: 600px;
+ @media screen and  (mim-width: $desktop ) {
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg1x-hero.jpg);
  
@@ -78,12 +76,12 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
   @media screen and  (max-width: 481px)
   {
     padding-top:  118px;
-    padding: bottom 198px;
+    padding-bottom: 198px;
   }
     @media screen and  (max-width: 1199px)
     {
     padding-top:  118px;
-     padding: bottom 198px;
+     padding-bottom:198px;
    }
   @media screen and  (min-width: $desktop )
   {
@@ -95,9 +93,11 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
 
 
  .title-main 
- {  font-family:Roboto, sans-serif ;
+ {  
+  font-weight: 900;
+  font-family:Roboto, sans-serif ;
    margin-left: auto;
-  margin-right: auto;
+   margin-right: auto;
    margin-bottom: 30px;
    letter-spacing: 0.06em;
    color:var(--primary-text-color-theme-dark);
@@ -133,14 +133,14 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
   }
  }  
 
- .benefits
- {
-@media screen and  (max-width: 479px)
- {
-  padding-top: 60px;
-  padding-bottom: 60px;
-} 
-}
+//  .benefits
+//  {
+// @media screen and  (max-width: 479px)
+//  {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// } 
+// }
  
      
      .do 
@@ -155,18 +155,20 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
   }
    .do-it
  { 
-   padding-top:0;
-   @media screen and  (max-width: 479px)
-   {
-    padding-top: 60px;
-    padding-bottom: 60px;
-   }
+  padding-top:0;
+ @media screen and  (min-width: $desktop )
+{
+  padding-top: 94px;
+  padding-bottom: 94px;
+ }
    }
    .do-liter 
-   {
+   { @media screen and  (max-width: 1199px ){
     display: none;
+   }
     @media screen and  (min-width: $desktop )
     {
+       font-weight:700;
        font-size: 36px;
        line-height:1.16;
        text-align: center;
@@ -199,6 +201,8 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
       font-family: Roboto, sans-serif;
       font-size: 14px;
       line-height: 1.14;
+      letter-spacing: 0.03em;
+      font-weight: 700;
       text-transform: uppercase;
       color: var(--primary-text-color-theme-dark);
       background-color: rgba(47, 48, 58, 0.8);
@@ -220,14 +224,6 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
  {
   width: 100%;
 
- 
-//    @media screen and  (min-width: $mobile ) 
- 
-//   { 
-//     width:calc((100% - 30px) / 1 );
-//    // flex-basis: 50%;
-   
-//  }
    @media screen and  (min-width: $tablet ) 
  
   {
@@ -247,16 +243,25 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
 // .title-benefits
 .page__title
 {
+ 
   text-transform: uppercase;
-  text-align: center;
- font-weight: 700;
- font-size: 14px;
- line-height:1.14;
-letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 14px;
+  line-height:1.14;
+  letter-spacing: 0.03em;
   margin-bottom: 10px;
   // gap: 10px;
+  
+  @media screen and  (min-width: $mobile ) { 
+  text-align: center
+ }
+ @media screen and  (min-width: $tablet ) { 
+  text-align:start;
+ }
+ @media screen and  (min-width: $desktop ) {
+  text-align:start;
+ }
 }
-
 // .note-benefits
  .page__note
  {  
@@ -301,17 +306,18 @@ background-color: var(--secondary-background-color-theme-light);
   .team-section 
 {
   background: var(--secondary-background-color-theme-light);
-  @media screen and  (max-width: 479px)
-  {
-   padding-top: 60px;
-   padding-bottom: 60px;
-  }
+  // @media screen and  (max-width: 479px)
+  // // {
+  // //  padding-top: 60px;
+  // //  padding-bottom: 60px;
+  // // }
 
 }
 
 
   .team-liter 
-{
+{   
+    font-weight: 700;
     font-size: 36px;
     line-height:1.16;
     text-align: center;
@@ -319,9 +325,18 @@ background-color: var(--secondary-background-color-theme-light);
     margin-bottom: 50px;
       //  gap: 50px;
     color:var(--accent-color) ;
-}         
 
+   @media screen and  (min-width: $tablet ) {
+    font-size: 28px;
+    line-height:1.17;
+    margin-bottom: 30px;
+}    
+@media screen and  (min-width: $desktop ) {
+  margin-bottom: 50px;
+  font-size: 36px;
 
+}
+}
 .team-name
 { 
   font-weight: 500;
@@ -557,14 +572,15 @@ fill:var(--secondary-background-fill);
  transition: fill var(--transition-dur-and-func);
   fill:var(--primary-text-color-theme-dark);  
  }
-.customers
-{
- @media screen and  (max-width: 479px)
-  {
-  padding-top: 60px;
-  padding-bottom: 60px;
-} 
-}
+
+// .customers
+// {
+//  @media screen and  (max-width: 479px)
+//   {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// } 
+// }
 
  .customers-list 
 {
@@ -576,18 +592,13 @@ fill:var(--secondary-background-fill);
 
 
  .customers-list-item
-{  justify-content: center;
-    column-gap: 30px;
-  
+{ 
+  justify-content: center;
+  column-gap: 30px;
+  height: 92px;
   //  width: 210px;
-  // height: 92 px;
-
-  // @media screen and  (min-width: 480px ) 
+  
  
-  // { 
-  //  width:calc((100% - 30px) / 2 );
-  //  // flex-basis: 50%;
-   
   @media screen and  (min-width: $mobile ) 
  
   { 

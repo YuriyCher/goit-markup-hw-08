@@ -138,7 +138,7 @@ margin-bottom:28px;
    height: 18px; */
   &-field
 {
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
@@ -157,7 +157,7 @@ margin-bottom:28px;
 {
   
   display: inline-block;
-  margin-right: 7px;
+  // margin-right: 7px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
@@ -181,6 +181,7 @@ margin-bottom:28px;
 
  .modal-check
    {
+    display: flex;
     visibility: hidden;
    &:checked +.modal-form-own-checkbox
 {
@@ -204,12 +205,10 @@ margin-bottom:28px;
 .titel-contract 
 {
  font-family:Roboto, sans-serif;
-
  font-size: 14px;
  line-height:  1.71;
-
  letter-spacing: 0.03em;
-margin: 5px;
+// margin: 5px;
  color:var(--primary-text-color-theme-light);  
 
 }
@@ -309,23 +308,21 @@ fill:var(--primary-text-color-theme-light);
         align-items: center;
     } 
     @media screen and ( min-width: $desktop ){
-      display: flex;
-      gap: 12px;
-      column-gap: 12px;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-}
-
+    display: flex;
+    gap: 12px;
+    -moz-column-gap: 12px;
+    column-gap: 12px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
  }
-
+}
 
 .modal-distribution-input
 {
     
         padding: 15px 16px;
      
-        min-width: 358px;
         background-color: inherit;
         outline: transparent;
         border-radius: 4px;
@@ -333,16 +330,20 @@ fill:var(--primary-text-color-theme-light);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         color: rgba(255, 255, 255, 0.6);
 
-        @media screen and (min-widt: $mobile )
+        @media screen and (min-width: $mobile )
         {
-          min-width: 450px; 
+          min-width:450px; 
         }
      
-          @media screen and (min-widt: $tablet )
-    {
-      min-width: 450px; 
-    }
+        @media screen and (min-width: $tablet )
+        {
+          min-width: 450px;
+        }
+        @media screen and (min-width: $desktop)
+        {min-width:358px;
+        } 
  }
+
 
 
  

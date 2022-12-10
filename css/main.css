@@ -332,7 +332,6 @@ button {
   height: 18px; */
 }
 .modal-form-check-field {
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
@@ -344,7 +343,6 @@ button {
 
 .modal-form-own-checkbox {
   display: inline-block;
-  margin-right: 7px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
@@ -367,6 +365,7 @@ button {
 }
 
 .modal-check {
+  display: flex;
   visibility: hidden;
 }
 .modal-check:checked + .modal-form-own-checkbox {
@@ -387,7 +386,6 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin: 5px;
   color: var(--primary-text-color-theme-light);
 }
 
@@ -482,16 +480,15 @@ button {
     display: flex;
     gap: 12px;
     -moz-column-gap: 12px;
-         column-gap: 12px;
+    column-gap: 12px;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
   }
 }
 
 .modal-distribution-input {
   padding: 15px 16px;
-  min-width: 358px;
   background-color: inherit;
   outline: transparent;
   border-radius: 4px;
@@ -499,14 +496,19 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-widt: 480px) {
+@media screen and (min-width: 480px) {
   .modal-distribution-input {
     min-width: 450px;
   }
 }
-@media screen and (min-widt: 768px) {
+@media screen and (min-width: 768px) {
   .modal-distribution-input {
     min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-distribution-input {
+    min-width: 358px;
   }
 }
 
@@ -643,6 +645,7 @@ button {
 .mobile-menu-link {
   font-family: Roboto;
   font-size: 40px;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
@@ -661,6 +664,7 @@ button {
 }
 
 .mobile-сontacts-tel {
+  font-weight: 700;
   font-family: Roboto;
   font-size: 34px;
   line-height: 1.17;
@@ -670,6 +674,7 @@ button {
 }
 
 .mobile-сontacts-post {
+  font-weight: 700;
   font-family: Roboto;
   font-size: 24px;
   line-height: 1.16;
@@ -689,6 +694,7 @@ button {
 }
 
 .mobile-socials-link {
+  font-weight: 700;
   font-family: Roboto;
   font-size: 18px;
   line-height: 1.22;
@@ -799,6 +805,8 @@ button {
 .nav__link {
   font-weight: 500;
   font-family: Roboto, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.02em;
   color: var(--accent-color);
   transition: color var(--transition-dur-and-func);
 }
@@ -849,6 +857,8 @@ button {
   display: flex;
   align-items: center;
   font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.02em;
   fill: currentColor;
   color: var(--secondary-text-color-theme-light);
   transition: color var(--transition-dur-and-func);
@@ -932,7 +942,6 @@ button {
 
 .overlay {
   max-width: 1600px;
-  height: 360px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -942,7 +951,6 @@ button {
 }
 @media screen and (max-width: 479px) {
   .overlay {
-    height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm1x-hero.jpg);
   }
 }
@@ -953,7 +961,6 @@ button {
 }
 @media screen and (min-width: 480px) {
   .overlay {
-    height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgsm1x-hero.jpg);
   }
 }
@@ -964,7 +971,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imgmg1x-hero.jpg);
   }
 }
@@ -975,7 +981,6 @@ button {
 }
 @media screen and (mim-width: 1200px) {
   .overlay {
-    height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg1x-hero.jpg);
   }
 }
@@ -991,13 +996,13 @@ button {
 @media screen and (max-width: 481px) {
   .solutions-page {
     padding-top: 118px;
-    padding: bottom 198px;
+    padding-bottom: 198px;
   }
 }
 @media screen and (max-width: 1199px) {
   .solutions-page {
     padding-top: 118px;
-    padding: bottom 198px;
+    padding-bottom: 198px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1008,6 +1013,7 @@ button {
 }
 
 .title-main {
+  font-weight: 900;
   font-family: Roboto, sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -1040,13 +1046,6 @@ button {
   }
 }
 
-@media screen and (max-width: 479px) {
-  .benefits {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 .do {
   display: none;
 }
@@ -1061,18 +1060,21 @@ button {
 .do-it {
   padding-top: 0;
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 1200px) {
   .do-it {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
-.do-liter {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .do-liter {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .do-liter {
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -1100,6 +1102,8 @@ button {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
   background-color: rgba(47, 48, 58, 0.8);
@@ -1127,12 +1131,26 @@ button {
 
 .page__title {
   text-transform: uppercase;
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .page__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page__title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page__title {
+    text-align: start;
+  }
 }
 
 .page__note {
@@ -1168,20 +1186,28 @@ button {
 .team-section {
   background: var(--secondary-background-color-theme-light);
 }
-@media screen and (max-width: 479px) {
-  .team-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 
 .team-liter {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .team-liter {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-liter {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team-name {
@@ -1268,13 +1294,6 @@ button {
   fill: var(--primary-text-color-theme-dark);
 }
 
-@media screen and (max-width: 479px) {
-  .customers {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 .customers-list {
   display: flex;
   flex-wrap: wrap;
@@ -1285,6 +1304,7 @@ button {
   justify-content: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  height: 92px;
 }
 @media screen and (min-width: 480px) {
   .customers-list-item {
@@ -1367,6 +1387,15 @@ body {
     align-items: stretch;
   }
 }
+@media screen and (min-width: 1200px) {
+  .foot {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+  }
+}
 
 .nav__top__list {
   font-style: normal;
@@ -1414,9 +1443,16 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-
-.foot__top__address {
-  margin-top: 20px;
+@media screen and (min-width: 768px) {
+  .foot__top {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot__top {
+    align-items: flex-start;
+    margin: 0;
+  }
 }
 
 .nav__name {
@@ -1430,6 +1466,11 @@ body {
     gap: 9px;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__name {
+    align-items: flex-start;
   }
 }
 
@@ -1485,6 +1526,11 @@ body {
     flex-direction: column;
     display: flex;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    align-items: flex-start;
   }
 }
 

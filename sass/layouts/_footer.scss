@@ -11,13 +11,6 @@ display: flex;
 align-items: baseline;
 align-items: center;
 
-// foot {
-//   display: flex;
-//   gap: 60px;
-//   align-content: space-around;
-//   flex-direction: column;
-//   flex-wrap: wrap;
-//   align-items: center;
 @media screen and  (min-width: $mobile )   {
   
   display: flex;
@@ -26,23 +19,25 @@ align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
 }
-@media screen and (min-width: $tablet)
-{
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-direction: row;
-    
-      display: flex;
+@media screen and (min-width: $tablet){
+     display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
       align-content: center;
-      align-items: stretch;
+     align-items: stretch;
 
 }
+@media screen and (min-width: $desktop){
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  
+  align-items: stretch;
+  flex-direction: row;
 
 }
-
+}
 .nav__top__list 
 {
   font-style: normal;   
@@ -100,12 +95,20 @@ align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    @media screen  and ( min-width: $tablet){
+     margin-right: 165px;
+    }
+    @media screen  and ( min-width: $desktop){
+      align-items: flex-start;
+      margin: 0;
+    }
+    
   }
 
-.foot__top__address
-{
- margin-top:20px;
- }
+// .foot__top__address
+// {
+//  margin-top:20px;
+//  }
 
 // log-name
 
@@ -120,6 +123,11 @@ flex-direction: column;
     flex-direction: column;
     align-items: center;
 }
+
+@media screen  and ( min-width: $desktop){
+  align-items: flex-start;
+}
+
 }
 
 
@@ -208,7 +216,9 @@ flex-direction: column;
   display: flex;
   align-items: center; 
 }
-
+@media screen  and ( min-width: $desktop){
+  align-items: flex-start;
+}
 }
 
 .join__title
@@ -219,6 +229,7 @@ line-height:1.14;
 text-transform: uppercase;
 margin-bottom: 20px; 
 color:var(--primary-text-color-theme-dark);
+
 } 
 
 // .join__title__bottom
