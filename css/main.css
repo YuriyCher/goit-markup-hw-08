@@ -332,13 +332,14 @@ button {
   height: 18px; */
 }
 .modal-form-check-field {
+  /* display: flex; */
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-light);
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .modal-form-own-checkbox {
@@ -1493,6 +1494,16 @@ body {
   justify-content: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+@media screen and (min-width: 320px) {
+  .join__soc {
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .join__soc__link {
