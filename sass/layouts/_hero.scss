@@ -156,10 +156,10 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
    .do-it
  { 
   padding-top:0;
- @media screen and  (min-width: $desktop )
-{
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and  (min-width: $desktop )
+ {
+  // padding-top: 94px;
+//   padding-bottom: 94px;
  }
    }
    .do-liter 
@@ -269,7 +269,7 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
   font-size: 14px;
   line-height:1.7;
   color:var(--secondary-text-color-theme-light); 
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 //  .benefits-list-icon
 .page__list__icon
@@ -325,7 +325,11 @@ background-color: var(--secondary-background-color-theme-light);
     margin-bottom: 50px;
       //  gap: 50px;
     color:var(--accent-color) ;
-
+    @media screen and  (min-width: $mobile ) {
+      font-size: 28px;
+      line-height:1.17;
+      margin-bottom: 30px;
+    }
    @media screen and  (min-width: $tablet ) {
     font-size: 28px;
     line-height:1.17;
