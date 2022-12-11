@@ -36,13 +36,14 @@
     width: 40px;
     height: 40px;
     color: #000;
+    &:hover,
+    &:focus
+    {
+
+      fill:var(--primary-text-color-theme-light);
+    }
    }
-    .icon-menu_40pxburger-menu-40:focus,
-    .icon-menu_40pxburger-menu-40:hover
-   {
-    background-color:
-    #2196F3;
-   }
+  
 
    .icon-close_24pxclose-burger-menu{
     width: 19px;
@@ -50,21 +51,12 @@
     color: #000;
     &:hover,
     &:focus
-  {
-  
-  color:var(--primary-text-color-theme-light);
-  } 
+    {
+
+      fill:var(--primary-text-color-theme-light);
+    }
 
    }
-
-  //  .icon-close_24pxclose-burger-menu:focus,
-  //  .icon-close_24pxclose-burger-menu:hover
-  //  {
-  //   background-color:
-  //   #2196F3;
-  //  }
-
-
 
   .menu-container {
     position: fixed;
@@ -82,14 +74,14 @@
     // padding-bottom: 32px;
     background-color: #fff;
 //     Effect: Drop shadow
-// Radius: 3px
-// Offset: 0px, 1px
-// rgba(0, 0, 0, 0.16)
+//  Radius: 3px
+//  Offset: 0px, 1px
+//  rgba(0, 0, 0, 0.16)
 // Effect: Drop shadow
 // Radius: 4px
-// Offset: 0px, 2px
-// rgba(0, 0, 0, 0.08)
-// Effect: Drop shadow
+//  Offset: 0px, 2px
+// // rgba(0, 0, 0, 0.08)
+// // Effect: Drop shadow
 // Radius: 8px
 // Offset: 0px, 4px
 // rgba(0, 0, 0, 0.04) 

@@ -571,10 +571,8 @@ button {
   height: 40px;
   color: #000;
 }
-
-.icon-menu_40pxburger-menu-40:focus,
-.icon-menu_40pxburger-menu-40:hover {
-  background-color: #2196F3;
+.icon-menu_40pxburger-menu-40:hover, .icon-menu_40pxburger-menu-40:focus {
+  fill: var(--primary-text-color-theme-light);
 }
 
 .icon-close_24pxclose-burger-menu {
@@ -583,7 +581,7 @@ button {
   color: #000;
 }
 .icon-close_24pxclose-burger-menu:hover, .icon-close_24pxclose-burger-menu:focus {
-  color: var(--primary-text-color-theme-light);
+  fill: var(--primary-text-color-theme-light);
 }
 
 .menu-container {
