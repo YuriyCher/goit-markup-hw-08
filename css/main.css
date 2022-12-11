@@ -647,7 +647,6 @@ button {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
-  padding-top: 48px;
 }
 .mobile-menu-link:hover, .mobile-menu-link:focus {
   color: var(--primary-text-color-theme-light);
