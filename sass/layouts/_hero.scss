@@ -535,7 +535,8 @@ border-radius: 0px 0px 4px 4px;
 justify-content: center;
 column-gap:10px;
 margin-bottom:10px; 
-&-link
+}
+.social-list-link
 {
 display:flex;
 align-items: center;
@@ -553,7 +554,7 @@ transition:
 background-color var(--transition-dur-and-func);
 }
 }
-}
+
 
 
  .social-list-link:hover .social-list-icon,
@@ -683,6 +684,12 @@ fill:var(--secondary-background-fill);
   
  }
 
- body{
+ .body{
+
+  @media screen and  (min-width: $desktop ) 
+ 
+  { 
+
   overflow-x: hidden;
  }
+}

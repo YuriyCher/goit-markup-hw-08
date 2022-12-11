@@ -48,14 +48,21 @@
     width: 19px;
     height: 19px;
     color: #000;
+    &:hover,
+    &:focus
+  {
+  
+  color:var(--primary-text-color-theme-light);
+  } 
+
    }
 
-   .icon-close_24pxclose-burger-menu:focus,
-   .icon-close_24pxclose-burger-menu:hover
-   {
-    background-color:
-    #2196F3;
-   }
+  //  .icon-close_24pxclose-burger-menu:focus,
+  //  .icon-close_24pxclose-burger-menu:hover
+  //  {
+  //   background-color:
+  //   #2196F3;
+  //  }
 
 
 
@@ -145,6 +152,13 @@
 
   text-decoration: none;
   padding-top: 48px;
+  &:hover,
+  &:focus
+{
+
+color:var(--primary-text-color-theme-light);
+} 
+
 }
 .mobile-сontacts{
   list-style: none;
