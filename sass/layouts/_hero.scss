@@ -86,7 +86,8 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
   @media screen and  (min-width: $desktop )
   {
  padding-top:  200px;
- padding-bottom:280px;
+ padding-bottom:200px;
+//  padding-bottom:280px;
  }
   }
     
@@ -159,7 +160,7 @@ rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heder/imglg2x-hero.
   @media screen and  (min-width: $desktop )
  {
   // padding-top: 94px;
-//   padding-bottom: 94px;
+ padding-bottom: 94px;
  }
    }
    .do-liter 
@@ -591,7 +592,8 @@ fill:var(--secondary-background-fill);
 {
     display: flex;
     flex-wrap: wrap;
-   gap: 30px;
+    gap: 30px;
+    justify-content: center;
 
   }
 
@@ -602,7 +604,13 @@ fill:var(--secondary-background-fill);
   column-gap: 30px;
   height: 92px;
   //  width: 210px;
-  
+  @media screen and  (min-width: $smobile ) 
+ 
+  { 
+   width:calc((100% - 60px) / 2 );
+   // flex-basis: 50%;
+    
+  }
  
   @media screen and  (min-width: $mobile ) 
  
@@ -639,6 +647,7 @@ fill:var(--secondary-background-fill);
   display:flex;
  align-items:center;
  justify-content: center;
+ 
 
  border: 1px solid var(--secondary-background-fill);
  border-radius: 4px;

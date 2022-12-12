@@ -11,6 +11,15 @@ display: flex;
 align-items: baseline;
 align-items: center;
 
+@media screen and  (min-width: $smobile )   {
+  
+  display: flex;
+  gap: 60px;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 @media screen and  (min-width: $mobile )   {
   
   display: flex;

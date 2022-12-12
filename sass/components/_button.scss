@@ -103,10 +103,13 @@ pointer-events: none;
   background-color: var(--primary-text-color-theme-dark);
   cursor: pointer;
   padding: 40px;
-
+  @media screen and  (min-width:$smobile )
+  { max-width: 300px;
+    height: 609px;
+  }
   @media (max-width: 479px) {
        
-    display: none;
+    // display: none;
   }
 
 

@@ -93,11 +93,11 @@
 
     @media (max-width: 479px) {
        
-        display: none;
+        // display: none;
       }
     
     @media screen and (max-width:$mobile ){
-      overflow: hidden;
+      // overflow: hidden;
     }
   }
   
@@ -141,17 +141,20 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
-
   text-decoration: none;
   // padding-top: 48px;
-  &:hover,
-  &:focus
+  @media screen and (max-width:$smobile ){
+  font-size: 36px;
+  font-weight: 500;
+  }
+ } 
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus
 {
-
 color:var(--primary-text-color-theme-light);
 } 
 
-}
+
 .mobile-сontacts{
   list-style: none;
   text-decoration:none;
@@ -172,9 +175,11 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 color:#2196F3;
 text-decoration: none;
-
+@media screen and (max-width:$smobile ){
+  font-size: 30px;
+  font-weight: 500;
 }
-
+}
 
 .mobile-сontacts-post
 {
@@ -187,6 +192,10 @@ text-decoration: none;
  
   color: #757575;
   text-decoration: none;
+  @media screen and (max-width:$smobile ){
+    font-size: 24px;
+    font-weight: 500;
+  }
 }
 
 .mobile-socials-item
@@ -213,6 +222,10 @@ letter-spacing: 0.02em;
 text-decoration: none;
  color: 
 #2196F3;
+@media screen and (max-width:$smobile ){
+  font-size: 12px;
+  font-weight: 500;
+}
 
 }
 
