@@ -1,5 +1,6 @@
 
  //breakpoints
+$msmobile:280px;
 $smobile: 320px;
 $mobile: 480px; 
 $tablet: 768px;
@@ -16,6 +17,13 @@ $desktop: 1200px;
 
          margin-left: auto;
          margin-right: auto;
+
+        //  $msmobile
+        @media screen and  (min-width: 280px)
+        {
+          width: 280px;
+          //  height:858px;
+        }
 
           //  smobile
           @media screen and  (min-width: 320px)

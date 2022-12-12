@@ -90,14 +90,23 @@
   
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+    @media (max-width: 319px) {
+      width: 100%; 
+   
+    }
 
-    @media (max-width: 479px) {
-       
-        // display: none;
-      }
+    @media (max-width: $smobile) {
+      width: 100%;
+      // display: none;
+    }
+
+  
     
     @media screen and (max-width:$mobile ){
-      // overflow: hidden;
+      width: 100%;
+    }
+    @media screen and (max-width:$tablet ){
+      width: 100%;
     }
   }
   
@@ -143,10 +152,10 @@
   color: #212121;
   text-decoration: none;
   // padding-top: 48px;
-  @media screen and (max-width:$smobile ){
-  font-size: 36px;
-  font-weight: 500;
-  }
+  // @media screen and (max-width:$smobile ){
+  // font-size: 36px;
+  // font-weight: 500;
+  // }
  } 
   .mobile-menu-link:hover,
   .mobile-menu-link:focus
@@ -175,10 +184,10 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 color:#2196F3;
 text-decoration: none;
-@media screen and (max-width:$smobile ){
-  font-size: 30px;
-  font-weight: 500;
-}
+// @media screen and (max-width:$smobile ){
+//   font-size: 30px;
+//   font-weight: 500;
+// }
 }
 
 .mobile-сontacts-post
@@ -192,10 +201,10 @@ text-decoration: none;
  
   color: #757575;
   text-decoration: none;
-  @media screen and (max-width:$smobile ){
-    font-size: 24px;
-    font-weight: 500;
-  }
+  // @media screen and (max-width:$smobile ){
+  //   font-size: 24px;
+  //   font-weight: 500;
+  // }
 }
 
 .mobile-socials-item
